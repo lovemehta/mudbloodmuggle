@@ -1,0 +1,17 @@
+.home{
+    visibility: hidden;
+}
+
+.visibleHome{
+    visibility: visible;
+    text-decoration-color: azure;
+}
+.visibleHome{
+    text-decoration-color: aqua;
+    
+}
+.homeLogo{
+    max-width: 50%;
+    max-height: 20%;
+    
+}
