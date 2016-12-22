@@ -1,61 +1,496 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Advitiya-Home</title>
-		<meta name="description" content="Advitiya Home Page" />
-		<meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
-		<meta name="author" content="Love Mehta" />
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Advitiya'17</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">	
+	<link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/demoheader.css" />
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/menu_wave.css" />
-		<script src="js/snap.svg-min.js"></script>
-        <!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div class="container demo-1">
-		<div class="menu-wrap">
-				<nav class="menu">
-					<div class="icon-list">
-                        <a href="index.html"><i class="fa fa-fw fa-star-o"></i><span>Home</span></a>
-						<a href="about.html"><i class="fa fa-fw fa-star-o"></i><span>About</span></a>
-						<a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Events</span></a>
-						<a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Director's Message</span></a>
-						<a href="sponsors.html"><i class="fa fa-fw fa-comment-o"></i><span>For the Sponsors</span></a>
-						<a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Pre Register</span></a>
-						<a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Contacts</span></a>
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body >
+	<header id="header" role="banner">		
+		<div class="main-nav">
+			<div class="container">
+				<div class="header-top">
+					<div class="pull-right social-icons">
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+						<a href="#"><i class="fa fa-youtube"></i></a>
 					</div>
-				</nav>
-				<button class="close-button" id="close-button"></button>
-				<div class="morph-shape" id="morph-shape" data-morph-open="M0,100h1000V0c0,0-136.938,0-224,0C583,0,610.924,0,498,0C387,0,395,0,249,0C118,0,0,0,0,0V100z">
-					<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 100" preserveAspectRatio="none">
-						<path d="M0,100h1000l0,0c0,0-136.938,0-224,0c-193,0-170.235-1.256-278-35C399,34,395,0,249,0C118,0,0,100,0,100L0,100z"/>
-					</svg>
-				</div>
-			</div>
-			<button class="menu-button" id="open-button"></button>
+				</div>     
+		        <div class="row">	        		
+		            <div class="navbar-header">
+		                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		                    <span class="sr-only">Toggle navigation</span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                </button>
+		                <a class="navbar-brand" href="index.html">
+		                	<img class="img-responsive" src="images/logo.png" alt="logo">
+		                </a>                    
+		            </div>
+		            <div class="collapse navbar-collapse">
+		                <ul class="nav navbar-nav navbar-right">                 
+		                    <li class="scroll active"><a href="#page-top">Home</a></li>
+		                    <li class="scroll"><a href="#explore">Explore</a></li>                         
+		                    <li class="scroll"><a href="#about">About</a></li>
+		                    <li class="scroll"><a href="#sponsors">Sponsors</a></li>                     
+		                    <!--<li class="no-scroll"><a href="#Events">Events</a></li>-->
+                                                 
+		                    <li class="scroll"><a href="#team">Our Team</a></li>
+		                    <li><a class="no-scroll" href="#" target="_blank">Become a Colllege Ambassador</a></li>
+		                    <li class="scroll"><a href="#contact">Contact</a></li>       
+		                </ul>
+		            </div>
+		        </div>
+	        </div>
+        </div>                    
+    </header>
+    <div id="page-top" class=" demo-1">
+		
 			
             <div class="content">
 				<div id="large-header" class="large-header">
 					<canvas id="demo-canvas"></canvas>
-                    <div class = "main-title-image"><img class = "homepageLogo" src="logowhite.png"/></div></br>
-                    <h1 class="main-title">IIT <span class="thin">Ropar</span></h1>
+                    <div class = "main-title-image"><img class = "homepageLogo" src="images/logo.png"/></div></br>
+                    <h1 class="main-title">Coming Soon <span class="thin">at Indian Institute of Technology , Ropar</span></h1>
 					</div>
+
+
             </div>
-		</div><!-- /container -->
-		<script src="js/TweenLite.min.js"></script>
+		</div>
+    <!--/#header--> 
+
+    <!--<section id="home">	
+
+		<div id="main-slider" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#main-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#main-slider" data-slide-to="1"></li>
+				<li data-target="#main-slider" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img class="img-responsive" src="images/slider/bg1.jpg" alt="slider">						
+					<div class="carousel-caption">
+						<h2>register for our College Ambassador Program </h2>
+						<h4>free goodies and certificate</h4>
+						<a href="#contact">Grab your chance <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="item">
+					<img class="img-responsive" src="images/slider/bg2.jpg" alt="slider">	
+					<div class="carousel-caption">
+						<h2>register for our College Ambassador Program </h2>
+						<h4>free goodies and certificate</h4>
+						<a href="#contact">Grab your chance <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+				<div class="item">
+					<img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">	
+					<div class="carousel-caption">
+						<h2>register for our College Ambassador Program </h2>
+						<h4>free goodies and certificate</h4>
+						<a href="#contact">Grab your chance <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>				
+			</div>
+		</div>    	
+    </section>
+	<!--/#home-->
+
+	<section id="explore">
+		<div class="container">
+			<div class="row">
+				<div class="watch">
+					<img class="img-responsive" src="images/watch.png" alt="">
+				</div>				
+				<div class="col-md-4 col-md-offset-2 col-sm-5">
+					<h2 id = "countdown-h2">We go live in</h2>
+				</div>				
+				<div class="col-sm-7 col-md-6">					
+					<ul id="countdown">
+						<li>					
+							<span class="days time-font">00</span>
+							<p>days </p>
+						</li>
+						<li>
+							<span class="hours time-font">00</span>
+							<p class="">hours </p>
+						</li>
+						<li>
+							<span class="minutes time-font">00</span>
+							<p class="">minutes</p>
+						</li>
+						<li>
+							<span class="seconds time-font">00</span>
+							<p class="">seconds</p>
+						</li>				
+					</ul>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2 col-sm-5"> 
+				<h2 id="countdown-h2"> Click her to become a coleege Ambassador</h2>
+				</div>	
+                
+            </div>
+		<!--	<div class="cart">
+				<a href="#"><i class="fa fa-shopping-cart"></i> <span>Purchase Tickets</span></a>
+			</div>-->
+		</div>
+	</section><!--/#explore-->
+<!--
+	<section id="event">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-9">
+					<div id="event-carousel" class="carousel slide" data-interval="false">
+						<h2 class="heading">THE ROCKING Performers</h2>
+						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
+											<h4>Chester Bennington</h4>
+											<h5>Vocal</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
+											<h4>Mike Shinoda</h4>
+											<h5>vocals, rhythm guitar</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
+											<h4>Rob Bourdon</h4>
+											<h5>drums</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
+											<h4>Chester Bennington</h4>
+											<h5>Vocal</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
+											<h4>Mike Shinoda</h4>
+											<h5>vocals, rhythm guitar</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
+											<h4>Rob Bourdon</h4>
+											<h5>drums</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="guitar">
+					<img class="img-responsive" src="images/guitar.png" alt="guitar">
+				</div>
+			</div>			
+		</div>
+	</section><!--/#event-->
+
+	<section  id="about">
+		<div class="guitar2">				
+			<img class="img-responsive" src="images/guitar2.png" alt="guitar">
+		</div>
+		<div class="about-content">					
+					<h2>About Advitiya</h2>
+					<p>Situated  in  the  heart  of  one  of  the  ancient  cities  of  India, Ropar,
+Indian  Institute  of  Technology  Ropar  is  among  the  highly  reputed  technological  institutions  in  the  country. 
+Having  bagged  the  9th  rank  in  the recently  published  MHRD  ranking, we  have  been  a  pioneer  among  the  younger  IITs  established  in  the  21st  century.
+</p>
+					
+				
+		</div>
+	</section><!--/#about-->
+	
+	<section id = "sponsors" >
+		<div class="guitar2">				
+			<img class="img-responsive" src="images/guitar2.png" alt="guitar">
+		</div>
+		<div class="about-content">					
+					<h2>Sponsors</h2>
+					<p>"Any  sufficiently  advanced  technology  is  indistinguishable  from  magic".
+
+
+Continuing  with  its  tradition  of  igniting  young  minds  and  unearthing  their  hidden  potential,
+IIT Ropar  brings  you  to  the  first  edition  its  technical  festival, Advitiya. 
+Launching  this  year, Advitiya, a  reinvigorate  inception  of  technosphere  is  the  annual  technological  and  entrepreneurial  festival  organised
+by  the  students  of  Indian  Institute  of  Technology, Ropar.
+Etymologically, the  word  Advitiya  signifies  'Uniqueness'.
+
+Advitiya  is  established  with  the  motto  of  providing  a  platform  to  the  technical 
+enthusiasts  of  our  country  to  explore  and  innovate  and  showcase  their  technical  and  engineering  prowess.
+The  entire  fest  is 
+distributed  over  a  period  of  a  three  days  that  witness  a  plethora  of  fun  events, workshops, exhibitions  and  games.
+So, come and unleash the tech junkie in you at Advitiya.</p>
+					<a href="#" class="btn btn-primary">View More <i class="fa fa-angle-right"></i></a>
+				
+		</div>
+	</section><!--/#about-->
+    	
+    <section id="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-9">
+					<div id="event-carousel" class="carousel slide" data-interval="false">
+						<h2 class="heading">Our Dedicated Team</h2>
+						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
+											<h4>Basil M Varghese</h4>
+											<h5>Technical Secretary</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
+											<h4>Himanshu Kulshreshtha</h4>
+											<h5>Publicity Team Head</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
+											<h4>Rohan More</h4>
+											<h5>Sponsorship Team Head</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
+											<h4>Love Mehta</h4>
+											<h5>Technical Head</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
+											<h4>Tijender Singh</h4>
+											<h5>Event Management Head</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+											<img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
+											<h4>Manjunath</h4>
+											<h5>General Secretary</h5>
+										</div>
+									</div>
+                                    
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!--
+				<div class="guitar">
+					<img class="img-responsive" src="images/guitar.png" alt="guitar">
+				</div>-->
+			</div>			
+		</div>
+	</section>
+<!--	<section id="twitter">
+		<div id="twitter-feed" class="carousel slide" data-interval="false">
+			<div class="twit">
+				<img class="img-responsive" src="images/twit.png" alt="twit">
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="text-center carousel-inner center-block">
+						<div class="item active">
+							<img src="images/twitter/twitter1.png" alt="">
+							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
+							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
+						</div>
+						<div class="item">
+							<img src="images/twitter/twitter2.png" alt="">
+							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
+							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
+						</div>
+						<div class="item">
+							<img src="images/twitter/twitter3.png" alt="">
+							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
+							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
+						</div>
+					</div>
+					<a class="twitter-control-left" href="#twitter-feed" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+					<a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+		</div>		
+	</section><!--/#twitter-feed-->
+	<!--
+	<section id="sponsor">
+		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10">
+						<h2>Sponsors</h2>			
+						<a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<div class="carousel-inner">
+							<div class="item active">
+								<ul>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="item">
+								<ul>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div class="light">
+				<img class="img-responsive" src="images/light.png" alt="">
+			</div>
+		</div>
+	</section><!--/#sponsor-->
+
+	<section id="contact">
+	<div id="map">
+			<div id="gmap-wrap">
+	 			<div id="gmap"> 				
+	 			</div>	 			
+	    	</div>
+		</div><!--/#map-->
+		<div class="contact-section">
+			<!--<div class="ear-piece">
+				<img class="img-responsive" src="images/ear-piece.png" alt="">
+			</div>-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 ">
+						<div class="contact-text">
+							<h3>Contact</h3>
+							<address>
+								E-mail: contact@advitiya.in<br>
+								Phone: 1234567890<br>
+								Fax: 1234567890
+							</address>
+						</div>
+						<div class="contact-address">
+							<h3>Contact</h3>
+							<address>
+								Some Address mahn<br>
+								Feeder Road,<br>
+								Shooter, BS2 0UY<br>
+								Chhu Mantar Gali
+							</address>
+						</div>
+					</div>
+					<div class="col-sm-offset-4 col-sm-5">
+						<div id="contact-section">
+							<h3>Send a message</h3>
+					    	<div class="status alert alert-success" style="display: none"></div>
+					    	<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+					            <div class="form-group">
+					                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+					            </div>
+					            <div class="form-group">
+					                <input type="email" name="email" class="form-control" required="required" placeholder="Email ID">
+					            </div>
+					            <div class="form-group">
+					                <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Enter your message"></textarea>
+					            </div>                        
+					            <div class="form-group">
+					                <button type="submit" class="btn btn-primary pull-right">Send</button>
+					            </div>
+					        </form>	       
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+    <!--/#contact-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                <p> Copyright  &copy;2016<a target="_blank" href="http://www.advitiya.in"> Advititya </a>. All Rights Reserved. <br> Designed by <a target="_blank" href="http://www.lovemehta.com/">One And Only the Great Love Mehta</a></p>                
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+  
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  	<script type="text/javascript" src="js/gmaps.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="js/coundown-timer.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>  
+    	<script src="js/TweenLite.min.js"></script>
 		<script src="js/EasePack.min.js"></script>
 		<script src="js/rAF.js"></script>
 		<script src="js/demo-1.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/main3.js"></script>
-	</body>
+</body>
 </html>
